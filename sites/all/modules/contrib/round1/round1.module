@@ -1,0 +1,32 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ggrenuy
+ * Date: 27.05.15
+ * Time: 14:00
+ */
+function round1_menu() {
+  $items['round1/hook-theme'] = array(
+    'title' => 'hook-theme',
+    'page callback' => 'round1_cloobeck',
+    'access callback' => true
+  );
+  return $items;
+}
+function round1_cloobeck(){
+  return theme("round1_content", array("text"=>"привет мир"));
+}
+
+
+function round1_theme(){
+  return array(
+    'round1_content' => array(
+      'variables' => array('text' => NULL),
+    ),
+  );
+}
+
+function theme_round1_content($variables){
+  return "<strong>".$variables['text']."</strong>";
+}
+//hook_theme
