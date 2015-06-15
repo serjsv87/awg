@@ -8,15 +8,16 @@
 function round1_exam_menu() {
   $items['round1_exam/page_1'] = array(
     'title' => 'hook-theme',
-    'page callback' => 'round1_exam_cloobeck',
-    'access callback' => true
+    'page callback' => 'round1_exam_callback',
+    'access callback' => true,
   );
   return $items;
 }
-function round1_exam_cloobeck(){
-  return theme("round1_exam_content", array("text"=>"привет мир")).theme("round1_exam_content_tpl", array("text"=>"Второй привет мир шаблон с файла"));
-}
 
+function round1_exam_callback(){
+  return theme("round1_exam_content", array("text" => "привет мир"))
+        .theme("round1_exam_content_tpl", array("text" => "Второй привет мир шаблон с файла"));
+}
 
 function round1_exam_theme(){
   return array(
