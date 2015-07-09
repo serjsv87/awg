@@ -1,0 +1,16 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ggrenuy
+ * Date: 07.07.15
+ * Time: 12:06
+ */
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function uworld_ct_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;
+  }
+
+}
