@@ -4,3 +4,4 @@ core = 7.x
 
 ; Views handlers
 files[] = include/views/view_handler_string_node_custom.inc
+files[] = include/views/view_handler_handler_filter_field_count.inc
