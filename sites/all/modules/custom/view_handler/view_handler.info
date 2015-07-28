@@ -1,0 +1,6 @@
+name = Views handler plugins
+package = uW moule
+core = 7.x
+
+; Views handlers
+files[] = include/views/view_handler_string_node_custom.inc
