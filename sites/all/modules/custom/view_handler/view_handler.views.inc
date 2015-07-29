@@ -16,8 +16,8 @@ function view_handler_views_data() {
       'handler' => 'view_handler_string_node_custom'
     )*/
   );
-  $data['node']['title_count']['title'] = 'Title word count';
-  $data['node']['title_count']['help'] = 'Count the number of words in titles.';
-  $data['node']['title_count']['filter']['handler'] = 'view_handler_handler_filter_field_count';
+  $data['node']['title_count']['title'] = 'Title letter count';
+  $data['node']['title_count']['help'] = 'Count the letters of words in titles.';
+  $data['node']['title_count']['filter']['handler'] = 'view_handler_handler_filter_field_letter_count';
   return $data;
 }
